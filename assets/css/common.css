@@ -83,7 +83,7 @@ body {
   font-size: 18px;
   position: absolute;
   top: 20px;
-  left: 35%;
+  left: 30%;
   text-align: center; }
 
 /* 네비게이션 메뉴 */
@@ -92,7 +92,7 @@ body {
   right: 15px;
   width: 24px;
   height: 20px;
-  z-index: 1000; }
+  z-index: 100; }
   .btn_menu, .btn_menu .line {
     position: absolute; }
   .btn_menu .line {
@@ -165,6 +165,9 @@ body {
     background: #375543; }
     #gnb ul li ul li a {
       padding: 5px 40px; }
+
+#fullpage .fullpage {
+  navigation: true; }
 
 /* All i want is olympia le tan 글자 */
 .video > p {
@@ -267,7 +270,7 @@ body {
   .shop_info figure {
     position: relative;
     max-width: 100%; }
-  .shop_info figcaption1 {
+  .shop_info .figcaption1 {
     top: 500px;
     position: absolute;
     width: 100%;
@@ -275,8 +278,11 @@ body {
     font-family: Audrey;
     font-weight: 300;
     color: white;
-    text-shadow: 2px 2px 4px #000000; }
-  .shop_info figcaption2 {
+    text-shadow: 2px 2px 4px #000000;
+    left: 20%;
+    letter-spacing: 0.1em;
+    z-index: 100; }
+  .shop_info .figcaption2 {
     top: 500px;
     position: absolute;
     width: 100%;
@@ -284,38 +290,182 @@ body {
     font-family: Audrey;
     font-weight: 300;
     color: white;
-    text-shadow: 2px 2px 4px #000000; }
+    text-shadow: 2px 2px 4px #000000;
+    left: 75%;
+    letter-spacing: 0.1em;
+    z-index: 100; }
   .shop_info .shop_info_image1 {
     float: left;
-    left: 30px; }
+    left: 30px;
+    animation: fadeInLeft forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s; }
+  .shop_info .shop_info_image2 {
+    float: right;
+    animation: fadeInRight forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s; }
 
-@-webkit-keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-@-moz-keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-@-o-keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+/*shop2*/
+.preoderTitle {
+  position: relative;
+  text-align: center;
+  top: 80px;
+  margin-bottom: 120px; }
+
+.shop_list {
+  position: relative; }
+  .shop_list li {
+    text-align: center;
+    position: relative;
+    margin: 50px 30px; }
+    .shop_list li .over {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding-top: 8px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      color: white;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+    .shop_list li p {
+      font-size: 1px;
+      letter-spacing: 0.001em; }
+    .shop_list li .EndBorder {
+      position: relative;
+      border: 1px dashed grey;
+      top: 20px;
+      left: 5px;
+      width: 270px; }
+  .shop_list li:hover .over {
+    left: 23%;
+    width: 54%;
+    padding-top: 0px;
+    background: rgba(0, 0, 0, 0.4); }
+  .shop_list li .over h4 {
+    position: relative;
+    padding-top: 70px; }
+  .shop_list li.on .over {
+    padding-top: 0px;
+    background: rgba(0, 0, 0, 0.4); }
+  .shop_list li .over h4:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -32px;
+    width: 64px;
+    height: 52px;
+    background: url("../images/icon_infra.png") no-repeat; }
+  .shop_list li:nth-child(1) .over h4:after {
+    background-position: -148px 0px; }
+  .shop_list li:nth-child(2) .over h4:after {
+    background-position: -74px 0px; }
+  .shop_list li .over p {
+    margin-top: 50px;
+    padding: 20px 0 32px;
+    line-height: 24px; }
+  .shop_list li .over a {
+    display: inline-block;
+    width: 118px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #fff; }
+  .shop_list li .over a:hover, .shop_list li .over a:focus {
+    background: #fff;
+    color: #555; }
+
+/* 처음부터 보여지게 처리 : 단 투명도를 0으로 숨기기 */
+.shop_list li .over h4:after, .shop_list .over p, .shop_list li .over a {
+  opacity: 0;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+.shop_list li:hover .over h4:after, .shop_list li:hover .over p, .shop_list li:hover .over a, .shop_list li.on .over h4:after, .shop_list li.on .over p, .shop_list li.on .over a {
+  opacity: 1;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)'; }
+
+#cnt5 {
+  width: 100%; }
+  #cnt5 footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 8px;
+    display: inline-block;
+    height: 30px;
+    line-height: 120%;
+    background: #ffc72a;
+    width: 100%; }
+  #cnt5 footer p {
+    margin-top: 2px; }
+
+.Underline {
+  width: 60px;
+  position: absolute;
+  top: 105px;
+  left: 150px; }
+
+.Underline p {
+  width: 0px;
+  height: 0.5px;
+  position: absolute;
+  background: grey;
+  animation: Underline forwards 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.5s; }
+
+.Underline .left {
+  right: 30px; }
+
+.Underline .right {
+  left: 30px; }
+
+/*shop3*/
+.consulting {
+  /* slider edit */ }
+  .consulting .swiper-container {
+    margin: 0 48px;
+    border: 0px solid #000;
+    height: 340px; }
+    .consulting .swiper-container .swiper-slide {
+      position: relative;
+      height: 100%;
+      text-align: center; }
+  .consulting .swiper-pagination-fraction {
+    bottom: 100px; }
+  .consulting .swiper-button-prev, .consulting .swiper-button-next {
+    top: 140px;
+    width: 14px;
+    height: 14px;
+    overflow: hidden;
+    display: inline-block; }
+  .consulting .swiper-button-prev:after, .consulting .swiper-button-next:after {
+    display: block;
+    padding-top: 10px; }
+  .consulting p {
+    text-align: center; }
+
+#cnt6 {
+  width: 100%; }
+  #cnt6 footer {
+    text-align: center;
+    margin-top: 84px;
+    font-size: 8px;
+    display: inline-block;
+    height: 30px;
+    line-height: 120%;
+    background: #ffc72a;
+    width: 100%; }
+  #cnt6 footer p {
+    margin-top: 2px; }
+
+@keyframes Underline {
+  0% {
+    width: 0; }
+  100% {
+    width: 30px; } }
 @keyframes fadeInRight {
   from {
     opacity: 0;
@@ -326,38 +476,8 @@ body {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
 .fadeInRight.on {
-  -webkit-animation: fadeInRight forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
-  -moz-animation: fadeInRight forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
-  -o-animation: fadeInRight forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
   animation: fadeInRight forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s; }
 
-@-webkit-keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-@-moz-keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-@-o-keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
 @keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -368,69 +488,19 @@ body {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
 .fadeInLeft.on {
-  -webkit-animation: fadeInLeft forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
-  -moz-animation: fadeInLeft forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
-  -o-animation: fadeInLeft forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
   animation: fadeInLeft forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s; }
 
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@-moz-keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@-o-keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
 @keyframes fadeIn {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
 .fadeIn.on {
-  -webkit-animation: fadeIn forwards 5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
-  -moz-animation: fadeIn forwards 5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
-  -o-animation: fadeIn forwards 5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
   animation: fadeIn forwards 5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s; }
 
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 150%, 0);
-    transform: translate3d(0, 150%, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-@-moz-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 150%, 0);
-    transform: translate3d(0, 150%, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-@-o-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 150%, 0);
-    transform: translate3d(0, 150%, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+.fadeIn {
+  animation: fadeIn forwards 5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s; }
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -441,9 +511,6 @@ body {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
 .fadeInUp.on {
-  -webkit-animation: fadeInUp forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
-  -moz-animation: fadeInUp forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
-  -o-animation: fadeInUp forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
   animation: fadeInUp forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s; }
 
 /*# sourceMappingURL=common.css.map */
