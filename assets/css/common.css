@@ -331,7 +331,7 @@ body {
       -o-transition: all 0.5s;
       transition: all 0.5s; }
     .shop_list li p {
-      font-size: 1px;
+      font-size: 13px;
       letter-spacing: 0.001em; }
     .shop_list li .EndBorder {
       position: relative;
