@@ -439,7 +439,9 @@ body {
     display: block;
     padding-top: 10px; }
   .consulting p {
-    text-align: center; }
+    text-align: center;
+    padding-top: 10%;
+    font-size: 15px; }
 
 #cnt6 {
   width: 100%; }
