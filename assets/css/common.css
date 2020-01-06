@@ -333,12 +333,6 @@ body {
     .shop_list li p {
       font-size: 13px;
       letter-spacing: 0.001em; }
-    .shop_list li .EndBorder {
-      position: relative;
-      border: 1px dashed grey;
-      top: 20px;
-      left: 5px;
-      width: 270px; }
   .shop_list li:hover .over {
     left: 23%;
     width: 54%;
@@ -406,14 +400,14 @@ body {
 .Underline {
   width: 60px;
   position: absolute;
-  top: 105px;
-  left: 150px; }
+  top: 110px;
+  left: 42%; }
 
 .Underline p {
   width: 0px;
-  height: 0.5px;
+  height: 1px;
   position: absolute;
-  background: grey;
+  background: #375543;
   animation: Underline forwards 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.5s; }
 
 .Underline .left {

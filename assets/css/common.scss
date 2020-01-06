@@ -168,7 +168,8 @@ body{font-family: "Century Gothic",CenturyGothic; font-size: 13px; color:#333; l
     li{text-align: center;position: relative; margin: 50px 30px; 
         .over{position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding-top: 8px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;color: white;-webkit-transition: all 0.5s;-moz-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;}
         p{font-size:13px; letter-spacing: 0.001em;}
-        .EndBorder{position: relative; border: 1px dashed grey; top: 20px; left: 5px; width: 270px; }
+        // .EndBorder{position: relative; border: 1px dashed grey; top: 20px; left: 5px; width: 1.000px;}
+      // img::after{ content: ""; position: relative; border: 1px dashed #555; width: 100%;}
     }
     li:hover .over{left: 23%; width: 54%; padding-top: 0px;background: rgba(0,0,0, 0.4);}
     li .over h4{position: relative;padding-top: 70px;}
@@ -192,8 +193,8 @@ body{font-family: "Century Gothic",CenturyGothic; font-size: 13px; color:#333; l
   footer{text-align: center; margin-top: 30px;font-size: 8px; display: inline-block; height:30px; line-height: 120%; background: #ffc72a; width: 100%;}
   footer p{margin-top: 2px;}
 }
-.Underline{width: 60px; position: absolute; top: 105px; left:150px;}
-.Underline p{width: 0px;height: 0.5px; position: absolute;background:grey;
+.Underline{width: 60px; position: absolute; top: 110px; left: 42%;}
+.Underline p{width: 0px;height: 1px; position: absolute;background: #375543;
     animation: Underline forwards 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.5s;
   }
 .Underline .left{right:30px;}
