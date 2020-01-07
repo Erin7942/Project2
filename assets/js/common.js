@@ -26,6 +26,9 @@ $(document).ready(function () {
   //메뉴열기 클릭
   $('.btn_menu').on('click', function () {
     if ($(this).hasClass('active')) { //닫기
+      //인디케이터 z-index 변경
+      $('#fp-nav').css('z-index', 100);
+
       $gnb.stop().animate({left: '100%'}, 300, function () {
         $(this).css({visibility: 'hidden'}).find('ul li.on').removeClass('on').children('ul').stop().slideUp();
       });
@@ -34,6 +37,9 @@ $(document).ready(function () {
     } else {    //열기
       var scrollMove = scrollT;  //click시 스크롤을 저장
       console.log(scrollMove);
+
+      //인디케이터 z-index 변경
+      $('#fp-nav').css('z-index', -1);
 
       $(this).addClass('active').find('blind').text('메뉴 닫기');
 
