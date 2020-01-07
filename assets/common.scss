@@ -154,11 +154,11 @@ body{font-family: "Century Gothic",CenturyGothic; font-size: 13px; color:#333; l
     max-width: 100%;
     max-height: 600%;
     background: #375543;
-    figure{position: relative; max-width: 100%; }
+    figure{position: relative; }
     .figcaption1{top:500px; position: absolute; width: 100%; font-size: 15px; font-family: Audrey; font-weight: 300; color: white;text-shadow: 2px 2px 4px #000000; left: 20%; letter-spacing: 0.1em;z-index: 100;}
     .figcaption2{top:500px; position: absolute; width: 100%; font-size: 15px; font-family: Audrey; font-weight: 300; color: white;text-shadow: 2px 2px 4px #000000; left: 75%; letter-spacing: 0.1em;z-index: 100;}
-    .shop_info_image1{width: 50%; float: left; animation: fadeInLeft forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;}
-    .shop_info_image2{width: 50%;float: right; animation: fadeInRight forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;}
+    .shop_info_image1{float: left; left: 30px; animation: fadeInLeft forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;}
+    .shop_info_image2{float: right; right:10px; animation: fadeInRight forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;}
 }
 
 /*shop2*/

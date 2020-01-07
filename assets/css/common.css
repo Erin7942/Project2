@@ -209,33 +209,31 @@ body {
   border: 30px solid #375543; }
 
 /* section */
-#cnt2, #cnt3 {
+#cnt2 figure:nth-child(1), #cnt3 img {
   padding-top: 65px; }
 
 /* 2번째 섹션태그 안의 글씨 및 사진 */
-#cnt2 {
-  box-sizing: border-box; }
-  #cnt2 figure {
-    position: relative; }
-  #cnt2 figcaption {
-    position: absolute;
-    width: 100%;
-    top: 67%;
-    right: 12%;
-    text-align: right;
-    font-size: 15px;
-    font-family: Audrey;
-    font-weight: 300;
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    z-index: 1000; }
+#cnt2 figure {
+  position: relative; }
+#cnt2 figcaption {
+  position: absolute;
+  width: 100%;
+  top: 67%;
+  right: 12%;
+  text-align: right;
+  font-size: 15px;
+  font-family: Audrey;
+  font-weight: 300;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  z-index: 1000; }
 
 /* 3번째 섹션태그의 글씨 편집 */
 #cnt3 p {
   text-align: center;
   word-spacing: 0.1em;
   font-size: 12px;
-  margin-top: 20px; }
+  margin: 20px 0; }
 #cnt3 .sub_tit {
   font-size: 15px;
   font-weight: 500;
@@ -245,16 +243,14 @@ body {
 #cnt4 {
   width: 100%; }
   #cnt4 footer {
-    text-align: center;
-    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 8px;
-    display: inline-block;
-    height: 30px;
+    height: 40px;
     line-height: 120%;
     background: #ffc72a;
     width: 100%; }
-  #cnt4 footer p {
-    margin-top: 2px; }
 
 /* shop1 */
 /* shop1_fig */
@@ -295,10 +291,11 @@ body {
     letter-spacing: 0.1em;
     z-index: 100; }
   .shop_info .shop_info_image1 {
+    width: 50%;
     float: left;
-    left: 30px;
     animation: fadeInLeft forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s; }
   .shop_info .shop_info_image2 {
+    width: 50%;
     float: right;
     animation: fadeInRight forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s; }
 
