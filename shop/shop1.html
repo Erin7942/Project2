@@ -5,15 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title> 메인페이지 </title>
     <link rel="stylesheet" href="assets/css/common.css">
-    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/fullpage.min.js"></script>
     <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/common.js"></script>
-    <script src="assets/js/mouseover.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
     <link rel="apple-touch-icon" href="assets/images/index/logo_1.png"><!-- 아이폰 전용 -->
     <link rel="shortcut icon" href="assets/images/index/logo_1.png"><!-- 안드로이드폰 전용 -->
+    <script> // 인디케이터
+        $(document).ready(function(){
+            $('#fullpage').fullpage({
+                //필요한 옵션으로 추가
+                // sectionsColor : ['red', 'green', 'blue', 'gray'], //각영역의 배경색
+                navigation: true,   //인디케이터를 보여지게 
+                navigationPosition: 'right',    //인디케이터의 위치
+                navigationTooltips: ['본문1', '본문2', '본문3', '푸터'], //인디케이터에 오버한 경우 보여질 텍스트, 접근성 향상
+                scrollBar: true, //스크롤바 생성하기(top 버튼이 필요하면 추가)
+                scrollOverflow: true,
+            });
+        })
+    </script>
+
+
 </head>
 <body>
     <!-- <div id="skip">
@@ -25,7 +41,7 @@
                 <a href="">
                     <img src="assets/images/index/logo_1.png" alt="올림피아르탱로고" class="logo_white">
                 </a>
-                <img src="assets/images/index/font_logo2.png" alt="올림피아르탱로고" class="logoName">
+                <p>OLYMPIA LE TAN</p>
             </h1>
             <!-- 네비게이션 만들기 -->
             <button class="btn_menu">
@@ -55,58 +71,28 @@
                     </li>
                 </ul>
             </nav>
+
         </header>
 
-            <section>
-                <div class="preoderTitle"><h3>PRE-ORDER</h3></div>
-                <div class="Underline">
-                    <p class="left"></p>
-                    <p class="right"></p>
-                </div>
-            </section>
+        <section class ="shop_info">
+            <figure>
+                <a href="shop2.html"><figcaption class="fadeIn figcaption1">PRE-ORDER</figcaption></a>
+                <a href="shop2.html"><img src="assets/images/shop/shop.png" srcset="assets/images/shop/shop2.png 2x, assets/images/shop/shop3.png 3x" alt="백조가방" class="shop_info_image1"></a>
+            </figure>
+            <figure>
+                <a href=""><figcaption class="fadeIn figcaption2">E. T. C.</figcaption></a>
+                <a href=""><img src="assets/images/shop/shop1_1.png" srcset="assets/images/shop/shop1_2.png 2x, assets/images/shop/shop1_3.png 3x" alt="핑크가방" class="shop_info_image2"></a>
+            </figure>
+        </section>
 
-            <article class="consulting">
-                <!-- swiper : touch mobile slider -->
-                <div class="swiper-container">
-                    <!-- 슬라이더 상세내용 그룹 -->
-                    <div class="swiper-wrapper">
-                        <!-- 상세내용 -->
-                        <div class="swiper-slide">
-                             <figure>
-                                <img src="assets/images/shop/slide.png" alt="">
-                            </figure>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="assets/images/shop/slide1.png" alt="">
-                            </figure>
-                          </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="assets/images/shop/slide2.png" alt="">
-                            </figure>
-                        </div>
-                    </div>
-                    <!-- 페이징 번호 -->
-                    <div class="swiper-pagination"></div>
-                
-                    <!-- 이전과 다음 버튼 -->
-                    <div class="swiper-button-prev"><img src="assets/images/shop/s_arr_prev.png" alt=""></div>
-                    <div class="swiper-button-next"><img src="assets/images/shop/s_arr_next.png" alt=""></div>
-                </div>
-
-                <p>Book Clutch Don’t Be A Tourist in New York</p>
-                <p>825,00€</p>
-            </article>
-
-
+        <!-- <div class ="section">
             <div class ="section fp-auto-height" id="cnt4">
                 <footer id="footer">
                     <p>&copy; 2019 OLT | Legal notice Any question ? <br>
                         Contact us contact@olympialetan.com | Subscribe to our Newsletter</p>
                     
                 </footer>
-             </div>
+         </div> -->
     </div>
 </body>
 </html>
