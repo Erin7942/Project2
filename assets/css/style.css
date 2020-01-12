@@ -34,7 +34,7 @@
     position: absolute;
     width: 100%;
     text-align: center;
-    margin-top: 220px;
+    margin-top: 275px;  /*글씨 높이*/
     font-family: Audrey;
     font-size: 18px;
     font-weight: 300;
@@ -48,16 +48,18 @@
 
 /* sub common */
 .sub_topvisual {
-  height: 550px;
+  height: 650px;
   margin-bottom: 0px; }
 
 /* overview */
 .sub_topvisual.aboutus::before {
   background: url("../images/company/designer.png") no-repeat center;
-  width: 60%;
-  height: 60%;
+  width: 70%;
+  height: 70%;
   position: relative;
-  left: 0%; }
+  left: 0%; 
+  top:3%;
+}
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dpi), screen and (min-resolution: 2dppx) {
   .sub_topvisual.aboutus::before {

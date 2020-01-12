@@ -245,10 +245,10 @@ body{font-family: "Century Gothic",CenturyGothic; font-size: 13px; color:#333; l
   .company_title{font-size: 20px; font-weight: 500;}
 }
 #fabrication{
-  .title{text-align: center;font-size: 1.5rem; padding-bottom: 4%;}
+  .title{text-align: center;font-size: 1.5rem; padding-bottom: 6%;}
 
   .Underline{width: 160px; position: relative; top: -10px; left: 30%; padding-bottom: 10%;}
-  .Underline p{width: 0px;height: 1px; position: absolute;background: #375543;
+  .Underline.on p{width: 0px;height: 1px; position: absolute;background: #375543;
     animation: Underline2 forwards 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.5s;
   }
   .Underline .left{right:80px;}
@@ -385,11 +385,11 @@ body{font-family: "Century Gothic",CenturyGothic; font-size: 13px; color:#333; l
 }
 #olt{
   margin-top: 80px;
-  height: 20rem;
-  .title{text-align: center;font-size: 1.5rem; padding-bottom: 4%;}
+  height: 23rem;
+  .title{text-align: center;font-size: 1.5rem; padding-bottom: 6%;}
 
   .Underline{width: 100px; position: relative; top: -10px; left: 36%; padding-bottom: 10%;}
-  .Underline p{width: 0px;height: 1px; position: absolute;background: #375543;
+  .Underline.on p{width: 0px;height: 1px; position: absolute;background: #375543;
     animation: Underline3 forwards 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.5s;
   }
   .Underline .left{right:50px;}
@@ -399,14 +399,14 @@ body{font-family: "Century Gothic",CenturyGothic; font-size: 13px; color:#333; l
     width: 50%;
   }
   .textbox{
-    margin-top: 1.5rem;
-    margin-left: 10.5rem;
+    margin-top: 2.0rem;
+    padding-left: 50%;
     position: absolute;
     border: 0px solid rgba(51, 51, 51, 1);
-    height: 4rem;
+    height: 6rem;
     width: 50%;
     
-    p{font-size: 10px;text-align: left; color: black;line-height: 0.9rem;}
+    p{font-size: 12px;text-align: left; color: black;line-height: 0.9rem;}
   }
 }
 
@@ -471,11 +471,9 @@ body{font-family: "Century Gothic",CenturyGothic; font-size: 13px; color:#333; l
   }
   
   .fadeIn.on {   // 스크롤 애니메이션
-    animation: fadeIn forwards 5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
+    animation: fadeIn forwards 3s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
   }
-  .fadeIn {
-    animation: fadeIn forwards 5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
-  }
+
 
   @keyframes fadeInUp {
     from {
