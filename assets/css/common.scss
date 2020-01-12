@@ -250,21 +250,30 @@ body{font-family: "Century Gothic",CenturyGothic; font-size: 13px; color:#333; l
       position: absolute;
       width: 50%;
     }
-    .textbox{
-      margin-top: 3.5rem;
-      margin-left: 1.5rem;
+    .background
+    {
+      margin-top: 3.0rem;
+      margin-left: 2.0rem;
       position: absolute;
       border: 0px solid rgba(51, 51, 51, 1);
       background: rgba(51, 51, 51, 0.3);
       height: 5rem;
       width: 80%;
+    }
+    .textbox{
+      margin-top: 4.0rem;
+      margin-left: 2.5rem;
+      position: absolute;
+      border: 0px solid rgba(51, 51, 51, 1);
+      height: 4rem;
+      width: 75%;
       
       .index{
-        line-height: 3rem;
         text-align: right;
         font-size: 1.5rem;
+        color: #fff;
       }
-      p{font-size: 12px;text-align: left;}
+      p{font-size: 12px;text-align: left;color: #fff;line-height: 0.9rem;}
     }
   }
   .fabrication2{
@@ -274,22 +283,113 @@ body{font-family: "Century Gothic",CenturyGothic; font-size: 13px; color:#333; l
       width: 50%;
       right: 0%;
     }
-    .textbox{
-      margin-top: 3.5rem;
-      margin-left: 1.5rem;
+    .background
+    {
+      margin-top: 2.0rem;
+      margin-left: 2.0rem;
       position: absolute;
       border: 0px solid rgba(51, 51, 51, 1);
       background: rgba(51, 51, 51, 0.3);
-      height: 5rem;
+      height: 5.3rem;
       width: 80%;
-      
+    }
+    .textbox{
+      margin-top: 3.0rem;
+      margin-left: 2.5rem;
+      position: absolute;
+      border: 0px solid rgba(51, 51, 51, 1);
+      height: 4rem;
+      width: 75%;
       .index{
-        line-height: 3rem;
         text-align: left;
         font-size: 1.5rem;
+        color: #fff;
       }
-      p{font-size: 12px;text-align: left;}
+      p{font-size: 12px;text-align: left; color: #fff;line-height: 0.9rem;}
     }
+  }
+  .fabrication3{
+    height: 11rem;
+    img{
+      position: absolute;
+      width: 50%;
+    }
+    .background
+    {
+      margin-top: 2.0rem;
+      margin-left: 2.0rem;
+      position: absolute;
+      border: 0px solid rgba(51, 51, 51, 1);
+      background: rgba(51, 51, 51, 0.3);
+      height: 7rem;
+      width: 80%;
+    }
+    .textbox{
+      margin-top: 3.0rem;
+      margin-left: 2.5rem;
+      position: absolute;
+      border: 0px solid rgba(51, 51, 51, 1);
+      height: 4rem;
+      width: 75%;
+      .index{
+        text-align: right;
+        font-size: 1.5rem;
+        color: #fff;
+      }
+      p{font-size: 12px;text-align: left;color: #fff;line-height: 0.9rem;}
+    }
+  }
+  .fabrication4{
+    height: 11rem;
+    img{
+      position: absolute;
+      width: 50%;
+      right: 0%;
+    }
+    .background
+    {
+      margin-top: 2.0rem;
+      margin-left: 2.0rem;
+      position: absolute;
+      border: 0px solid rgba(51, 51, 51, 1);
+      background: rgba(51, 51, 51, 0.3);
+      height: 7rem;
+      width: 80%;
+    }
+    .textbox{
+      margin-top: 3.0rem;
+      margin-left: 2.5rem;
+      position: absolute;
+      border: 0px solid rgba(51, 51, 51, 1);
+      height: 4rem;
+      width: 75%;
+      
+      .index{
+        text-align: left;
+        font-size: 1.5rem;
+        color: #fff;
+      }
+      p{font-size: 12px;text-align: left; color: #fff;line-height: 0.9rem;}
+    }
+  }
+}
+#olt{
+  margin-top: 80px;
+  height: 20rem;
+  .title{text-align: center;font-size: 1rem; height: 2.5rem;}
+  img{
+    position: absolute;
+    width: 50%;
+  }
+  .textbox{
+    margin-top: 1.5rem;
+    margin-left: 10.5rem;
+    position: absolute;
+    border: 0px solid rgba(51, 51, 51, 1);
+    height: 4rem;
+    width: 50%;
+    
+    p{font-size: 10px;text-align: left; color: black;line-height: 0.9rem;}
   }
 }
 
