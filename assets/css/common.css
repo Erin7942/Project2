@@ -481,9 +481,9 @@ body {
 #fabrication .title {
   text-align: center;
   font-size: 1rem;
-  height: 4rem; }
+  padding-bottom: 10%; }
 #fabrication .fabrication1 {
-  height: 11rem; }
+  padding-bottom: 50%; }
   #fabrication .fabrication1 img {
     position: absolute;
     width: 50%; }
@@ -512,7 +512,7 @@ body {
       color: #fff;
       line-height: 0.9rem; }
 #fabrication .fabrication2 {
-  height: 11rem; }
+  padding-bottom: 50%; }
   #fabrication .fabrication2 img {
     position: absolute;
     width: 50%;
@@ -542,7 +542,7 @@ body {
       color: #fff;
       line-height: 0.9rem; }
 #fabrication .fabrication3 {
-  height: 11rem; }
+  padding-bottom: 50%; }
   #fabrication .fabrication3 img {
     position: absolute;
     width: 50%; }
@@ -571,7 +571,7 @@ body {
       color: #fff;
       line-height: 0.9rem; }
 #fabrication .fabrication4 {
-  height: 11rem; }
+  padding-bottom: 50%; }
   #fabrication .fabrication4 img {
     position: absolute;
     width: 50%;
