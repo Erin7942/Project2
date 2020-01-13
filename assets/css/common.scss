@@ -122,8 +122,16 @@ body{font-family: "Century Gothic",CenturyGothic; font-size: 13px; color:#333; l
   }
 
 /* 비디오 */
-.video{position: relative; padding-bottom: 56.25%;height:0;top: 50px;}
-.youtube{position: absolute;max-width: 70%; top: 40%; left: 10%; width: 100%; height: 100%; border: 30px solid #375543 ;}
+.video{
+  position: relative; 
+  padding-bottom: 56.25%;
+  height:0;
+  top: 50px;
+  img{
+    width: 100%;
+  }
+}
+.youtube{position: absolute;max-width: 70%; top: 40%; left: 8%; width: 100%; height: 100%; border: 30px solid #375543 ; text-align: center;}
 /* section */
 //#cnt2, #cnt3{padding-top: 65px;}
 #cnt2 figure:nth-child(1), #cnt3 img{padding-top: 65px;}
